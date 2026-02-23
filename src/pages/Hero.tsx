@@ -14,14 +14,13 @@ const Hero: React.FC = () => {
 
           <h1 className="hero-title">
             Chase Donahoe<br />
-            <span className="text-gradient">Blockchain & Web3 Innovator</span>
+            <span className="text-gradient">Full Stack Innovation Leader</span>
           </h1>
 
           <p className="hero-subtitle">
-            Dynamic Full Stack Founding Software Engineer with expertise in blockchain technology,
-            smart contract architecture, and high-performance web applications. I drive innovation
-            and operational excellence, creating seamless integrations between traditional web and
-            decentralized technologies.
+            Dynamic Full Stack Software Engineer with expertise across modern web technologies,
+            from React and Node.js to emerging blockchain solutions. I architect scalable applications,
+            lead high-performing teams, and drive innovation that delivers real business value.
           </p>
 
           <div className="hero-stats">
@@ -35,7 +34,7 @@ const Hero: React.FC = () => {
             </div>
             <div className="stat">
               <div className="stat-number">1000+</div>
-              <div className="stat-label">Hours Bootcamp</div>
+              <div className="stat-label">Hours Coding</div>
             </div>
           </div>
 

@@ -6,48 +6,50 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: '1',
-      title: 'Decentralized Finance (DeFi) Platform',
-      description: 'Architected and deployed a comprehensive DeFi platform with secure smart contracts for lending, borrowing, and yield farming. Implemented gas optimization techniques reducing transaction costs by 40% while maintaining security standards.',
-      technologies: ['Solidity', 'Ethereum', 'Web3.js', 'React', 'Node.js', 'Hardhat', 'OpenZeppelin'],
+      title: 'E-Commerce Platform with Analytics',
+      description: 'Built a full-featured e-commerce platform with real-time analytics dashboard, inventory management, and payment processing. Features responsive design, RESTful APIs, and comprehensive admin tools for managing products, orders, and customer data.',
+      technologies: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Stripe API', 'Redis', 'Docker'],
+      githubUrl: 'https://github.com/chasedonahoe/ecommerce-platform',
+      liveUrl: 'https://ecommerce-demo.chasedonahoe.dev'
+    },
+    {
+      id: '2',
+      title: 'Task Management Application',
+      description: 'Developed a collaborative project management tool with real-time updates, drag-and-drop functionality, team collaboration, and advanced reporting. Built with modern React patterns and scalable backend architecture.',
+      technologies: ['React', 'TypeScript', 'Node.js', 'Socket.io', 'MongoDB', 'JWT', 'Material-UI'],
+      githubUrl: 'https://github.com/chasedonahoe/task-manager',
+      liveUrl: 'https://tasks-demo.chasedonahoe.dev'
+    },
+    {
+      id: '3',
+      title: 'DeFi Lending Platform',
+      description: 'Architected a decentralized finance platform with secure smart contracts for lending and borrowing. Implemented gas optimization techniques reducing transaction costs by 40% while maintaining security standards.',
+      technologies: ['Solidity', 'Ethereum', 'Web3.js', 'React', 'Hardhat', 'OpenZeppelin'],
       githubUrl: 'https://github.com/chasedonahoe/defi-platform',
       liveUrl: 'https://defi-demo.powermeta.io'
     },
     {
-      id: '2',
-      title: 'NFT Marketplace with Smart Contract Royalties',
-      description: 'Built a full-featured NFT marketplace with automated royalty distribution smart contracts. Features include minting, trading, and collection management with responsive React frontend and robust backend APIs.',
-      technologies: ['Solidity', 'React', 'Express', 'IPFS', 'Web3', 'MongoDB', 'Ethereum'],
-      githubUrl: 'https://github.com/chasedonahoe/nft-marketplace'
-    },
-    {
-      id: '3',
-      title: 'Multi-Chain Wallet Integration',
-      description: 'Developed a universal wallet interface supporting multiple blockchain networks. Integrated with MetaMask, WalletConnect, and other providers to create seamless user experiences across different chains.',
-      technologies: ['React', 'TypeScript', 'Web3.js', 'Ethers.js', 'Redux', 'Styled Components'],
-      githubUrl: 'https://github.com/chasedonahoe/multi-chain-wallet',
-      liveUrl: 'https://wallet-demo.powermeta.io'
-    },
-    {
       id: '4',
-      title: 'Decentralized Voting System',
-      description: 'Created a transparent voting platform using blockchain technology to ensure tamper-proof elections. Implemented privacy features while maintaining verifiability and deployed on Ethereum testnet.',
-      technologies: ['Solidity', 'Vue.js', 'Web3', 'Truffle', 'PostgreSQL', 'Node.js'],
-      githubUrl: 'https://github.com/chasedonahoe/decentralized-voting'
+      title: 'Social Media Dashboard',
+      description: 'Created a comprehensive social media management platform with multi-platform posting, analytics tracking, and content scheduling. Features include team collaboration and detailed performance metrics.',
+      technologies: ['Vue.js', 'Python', 'Flask', 'PostgreSQL', 'Redis', 'Twitter API', 'Chart.js'],
+      githubUrl: 'https://github.com/chasedonahoe/social-dashboard'
     },
     {
       id: '5',
-      title: 'Real-Time Trading Dashboard',
-      description: 'Built a comprehensive cryptocurrency trading dashboard with real-time price feeds, portfolio tracking, and advanced charting. Integrated with multiple exchange APIs for live market data.',
-      technologies: ['React', 'Python', 'Flask', 'WebSocket', 'Chart.js', 'Redis', 'PostgreSQL'],
-      githubUrl: 'https://github.com/chasedonahoe/trading-dashboard',
-      liveUrl: 'https://trading-demo.powermeta.io'
+      title: 'Real-Time Chat Application',
+      description: 'Built a scalable chat application supporting thousands of concurrent users with features like file sharing, emoji reactions, and channel management. Optimized for performance and user experience.',
+      technologies: ['React', 'Socket.io', 'Node.js', 'MongoDB', 'AWS S3', 'JWT'],
+      githubUrl: 'https://github.com/chasedonahoe/chat-app',
+      liveUrl: 'https://chat-demo.chasedonahoe.dev'
     },
     {
       id: '6',
-      title: 'Smart Contract Testing Suite',
-      description: 'Developed comprehensive testing framework for smart contract validation and security auditing. Includes automated gas optimization analysis and vulnerability detection tools.',
-      technologies: ['JavaScript', 'Hardhat', 'Chai', 'Mocha', 'Solhint', 'Slither', 'Node.js'],
-      githubUrl: 'https://github.com/chasedonahoe/smart-contract-testing'
+      title: 'Weather Analytics Platform',
+      description: 'Developed a weather data visualization platform with predictive analytics, historical data comparison, and API integration. Features interactive maps and customizable dashboards.',
+      technologies: ['React', 'Python', 'FastAPI', 'D3.js', 'PostgreSQL', 'OpenWeather API'],
+      githubUrl: 'https://github.com/chasedonahoe/weather-platform',
+      liveUrl: 'https://weather-demo.chasedonahoe.dev'
     }
   ];
 
@@ -58,9 +60,9 @@ const Projects: React.FC = () => {
     <section id="projects" className="projects section section-alt">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Blockchain Innovation Portfolio</h2>
+          <h2 className="section-title">Full Stack Project Portfolio</h2>
           <p className="section-subtitle">
-            Cutting-edge Web3 applications and smart contract solutions that bridge traditional web with blockchain technology
+            Modern web applications showcasing expertise across frontend, backend, and emerging technologies
           </p>
         </div>
 
@@ -109,36 +111,41 @@ const Projects: React.FC = () => {
                 <div className="mockup-content">
                   <div className="code-snippet">
                     <div className="code-line">
-                      <span className="code-keyword">contract</span>
-                      <span className="code-class"> DeFiLending</span>
-                      <span className="code-bracket"> &#123;</span>
+                      <span className="code-keyword">const</span>
+                      <span className="code-class"> OrderService</span>
+                      <span className="code-bracket"> = &#123;</span>
                     </div>
                     <div className="code-line">
-                      <span className="code-method">  function deposit</span>
+                      <span className="code-method">  async processOrder</span>
                       <span className="code-bracket">(</span>
-                      <span className="code-param">uint256 amount</span>
+                      <span className="code-param">orderData</span>
                       <span className="code-bracket">) &#123;</span>
                     </div>
                     <div className="code-line">
-                      <span className="code-comment">    // Gas-optimized deposit</span>
+                      <span className="code-comment">    // Validate and process</span>
                     </div>
                     <div className="code-line">
-                      <span className="code-return">    require</span>
+                      <span className="code-keyword">    const</span>
+                      <span className="code-param"> order</span>
+                      <span className="code-bracket"> =</span>
+                    </div>
+                    <div className="code-line">
+                      <span className="code-keyword">      await</span>
+                      <span className="code-method"> Order.create</span>
                       <span className="code-bracket">(</span>
-                      <span className="code-param">amount &gt; 0</span>
+                      <span className="code-param">orderData</span>
                       <span className="code-bracket">);</span>
                     </div>
                     <div className="code-line">
-                      <span className="code-method">    _updateBalance</span>
-                      <span className="code-bracket">(</span>
-                      <span className="code-param">msg.sender</span>
-                      <span className="code-bracket">);</span>
+                      <span className="code-return">    return</span>
+                      <span className="code-param"> order</span>
+                      <span className="code-bracket">;</span>
                     </div>
                     <div className="code-line">
                       <span className="code-bracket">  &#125;</span>
                     </div>
                     <div className="code-line">
-                      <span className="code-bracket">&#125;</span>
+                      <span className="code-bracket">&#125;;</span>
                     </div>
                   </div>
                 </div>
@@ -148,7 +155,7 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="other-projects">
-          <h3 className="other-projects-title">Other Web3 Projects</h3>
+          <h3 className="other-projects-title">More Projects</h3>
           <div className="projects-grid">
             {otherProjects.map((project) => (
               <div key={project.id} className="project-card">

@@ -5,15 +5,15 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <h2>Let's Build the Future Together</h2>
+        <h2>Let's Build Something Amazing</h2>
         <div className="contact-content">
           <div className="contact-info">
-            <h3>Ready to Innovate?</h3>
+            <h3>Ready to Collaborate?</h3>
             <p>
-              I'm passionate about blockchain technology and its potential to transform
-              how we build and interact with digital systems. Whether you're looking
-              for a founding engineer to architect your Web3 vision or need expertise
-              in smart contract development, let's connect.
+              I'm passionate about creating robust, scalable applications that solve real problems
+              and drive business growth. Whether you need a founding engineer to build your MVP,
+              a senior developer to scale your platform, or technical leadership to guide your team,
+              let's discuss how I can help.
             </p>
             <div className="contact-methods">
               <div className="contact-method">
@@ -47,14 +47,14 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="contact-cta">
-              <h4>Areas of Expertise</h4>
+              <h4>Core Competencies</h4>
               <div className="expertise-tags">
-                <span>Smart Contract Development</span>
-                <span>DeFi Protocols</span>
-                <span>Web3 Integration</span>
-                <span>Blockchain Architecture</span>
                 <span>Full-Stack Development</span>
+                <span>React & Node.js</span>
+                <span>Database Design</span>
+                <span>API Development</span>
                 <span>Team Leadership</span>
+                <span>System Architecture</span>
               </div>
             </div>
           </div>
