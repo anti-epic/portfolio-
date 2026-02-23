@@ -7,11 +7,11 @@ const port = process.env.PORT || 3000;
 // Serve static files from the React app build directory
 app.use(express.static(path.join(__dirname, 'build')));
 
-// Catch all handler: send back React's index.html file for any non-API routes
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+// Handle React routing, return all requests to React app
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build/index.html'));
 });
 
 app.listen(port, () => {
-  console.log(`Portfolio server listening on port ${port}`);
+  console.log(`Server is running on port ${port}`);
 });
