@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './components/Header';
+import Hero from './pages/Hero';
 import About from './pages/About';
-import Skills from './pages/Skills';
+import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import './App.css';
@@ -11,8 +12,9 @@ function App() {
     <div className="App">
       <Header />
       <main>
+        <Hero />
         <About />
-        <Skills />
+        <Experience />
         <Projects />
         <Contact />
       </main>
