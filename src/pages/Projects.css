@@ -187,6 +187,10 @@
   color: #c792ea;
 }
 
+.code-string {
+  color: #c3e88d;
+}
+
 /* Other Projects */
 .other-projects {
   margin-top: var(--space-3xl);

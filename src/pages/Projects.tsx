@@ -6,19 +6,18 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: '1',
-      title: 'E-Commerce Platform with Analytics',
-      description: 'Built a full-featured e-commerce platform with real-time analytics dashboard, inventory management, and payment processing. Features responsive design, RESTful APIs, and comprehensive admin tools for managing products, orders, and customer data.',
-      technologies: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Stripe API', 'Redis', 'Docker'],
-      githubUrl: 'https://github.com/chasedonahoe/ecommerce-platform',
-      liveUrl: 'https://ecommerce-demo.chasedonahoe.dev'
+      title: 'lol.gg',
+      description: 'A League of Legends stat-tracking site in the style of OP.GG. Search any summoner across 11 regions to view ranked stats, match history with rich KDA cards, kill participation %, multi-kill badges, and per-game scoreboards. Browse all champions with a filterable grid and drill into champion detail pages showing item win rates aggregated from real matches — broken out by game mode (Ranked, ARAM, Arena, URF, and more). ARAM pages display live buff/nerf modifiers pulled from Community Dragon.',
+      technologies: ['Next.js 15', 'TypeScript', 'tRPC', 'PostgreSQL', 'Prisma', 'Redis', 'Tailwind CSS', 'Riot Games API', 'Vitest', 'Docker'],
+      githubUrl: 'https://github.com/anti-epic/lol.gg',
+      liveUrl: 'https://lol-gg-steel.vercel.app/'
     },
     {
       id: '2',
-      title: 'Task Management Application',
-      description: 'Developed a collaborative project management tool with real-time updates, drag-and-drop functionality, team collaboration, and advanced reporting. Built with modern React patterns and scalable backend architecture.',
-      technologies: ['React', 'TypeScript', 'Node.js', 'Socket.io', 'MongoDB', 'JWT', 'Material-UI'],
-      githubUrl: 'https://github.com/chasedonahoe/task-manager',
-      liveUrl: 'https://tasks-demo.chasedonahoe.dev'
+      title: 'AllAboutMovies',
+      description: 'A full-stack movie browsing app powered by the TMDB API. Browse trending and discover feeds (daily or weekly), view detailed movie pages with banners, cast, trailers, genres, budget, and revenue data. Authenticated users can manage a personal watchlist and leave reviews. Includes real-time search, signup/login with full validation, and a demo account for quick access.',
+      technologies: ['React', 'Redux', 'Express.js', 'Sequelize', 'PostgreSQL', 'JavaScript', 'CSS'],
+      githubUrl: 'https://github.com/anti-epic/AllAboutMovies'
     },
     {
       id: '3',
@@ -111,41 +110,44 @@ const Projects: React.FC = () => {
                 <div className="mockup-content">
                   <div className="code-snippet">
                     <div className="code-line">
+                      <span className="code-comment">// tRPC summoner lookup</span>
+                    </div>
+                    <div className="code-line">
                       <span className="code-keyword">const</span>
-                      <span className="code-class"> OrderService</span>
-                      <span className="code-bracket"> = &#123;</span>
-                    </div>
-                    <div className="code-line">
-                      <span className="code-method">  async processOrder</span>
-                      <span className="code-bracket">(</span>
-                      <span className="code-param">orderData</span>
-                      <span className="code-bracket">) &#123;</span>
-                    </div>
-                    <div className="code-line">
-                      <span className="code-comment">    // Validate and process</span>
-                    </div>
-                    <div className="code-line">
-                      <span className="code-keyword">    const</span>
-                      <span className="code-param"> order</span>
+                      <span className="code-param"> summoner</span>
                       <span className="code-bracket"> =</span>
                     </div>
                     <div className="code-line">
-                      <span className="code-keyword">      await</span>
-                      <span className="code-method"> Order.create</span>
-                      <span className="code-bracket">(</span>
-                      <span className="code-param">orderData</span>
-                      <span className="code-bracket">);</span>
+                      <span className="code-keyword">  await</span>
+                      <span className="code-method"> trpc.summoner</span>
+                      <span className="code-bracket">.</span>
+                      <span className="code-method">get</span>
+                      <span className="code-bracket">(&#123;</span>
                     </div>
                     <div className="code-line">
-                      <span className="code-return">    return</span>
-                      <span className="code-param"> order</span>
+                      <span className="code-param">    name</span>
+                      <span className="code-bracket">:</span>
+                      <span className="code-string"> "Faker"</span>
+                      <span className="code-bracket">,</span>
+                    </div>
+                    <div className="code-line">
+                      <span className="code-param">    region</span>
+                      <span className="code-bracket">:</span>
+                      <span className="code-string"> "KR"</span>
+                      <span className="code-bracket">,</span>
+                    </div>
+                    <div className="code-line">
+                      <span className="code-bracket">  &#125;);</span>
+                    </div>
+                    <div className="code-line">
+                      <span className="code-comment">// cache hit via Redis</span>
+                    </div>
+                    <div className="code-line">
+                      <span className="code-return">return</span>
+                      <span className="code-param"> summoner</span>
+                      <span className="code-bracket">.</span>
+                      <span className="code-method">rankedStats</span>
                       <span className="code-bracket">;</span>
-                    </div>
-                    <div className="code-line">
-                      <span className="code-bracket">  &#125;</span>
-                    </div>
-                    <div className="code-line">
-                      <span className="code-bracket">&#125;;</span>
                     </div>
                   </div>
                 </div>
