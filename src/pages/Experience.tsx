@@ -15,7 +15,7 @@ const Experience: React.FC = () => {
     {
       company: "Power Meta",
       role: "Full Stack Founding Software Engineer",
-      period: "May 2023 - Oct 2025",
+      period: "May 2023 - Oct 2026",
       description: "Architected and developed blockchain-based solutions with a focus on security, gas efficiency, and user experience integration.",
       achievements: [
         "Architected and deployed secure smart contracts for blockchain-based solutions, ensuring reliability and optimal gas efficiency",
