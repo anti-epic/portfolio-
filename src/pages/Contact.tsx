@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
                 <div className="contact-icon">🌎</div>
                 <div className="contact-details">
                   <strong>Location</strong>
-                  <span>Santa Ana, CA 92707</span>
+                  <span>Austin, TX</span>
                 </div>
               </div>
             </div>
