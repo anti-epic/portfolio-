@@ -8,7 +8,7 @@ const Header: React.FC = () => {
         <div className="nav-brand">
           <div className="brand-text">
             <span className="brand-name">Chase Donahoe</span>
-            <span className="brand-title">Founding Engineer & UX Leader</span>
+            <span className="brand-title">Full Stack Software Engineer</span>
           </div>
         </div>
         <ul className="nav-links">

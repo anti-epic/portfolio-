@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
                 <span>React & Node.js</span>
                 <span>Database Design</span>
                 <span>API Development</span>
-                <span>Team Leadership</span>
+                <span>Payments & Job Queues</span>
                 <span>System Architecture</span>
               </div>
             </div>

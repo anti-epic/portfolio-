@@ -6,9 +6,9 @@ const About: React.FC = () => {
     <section id="about" className="about section section-alt">
       <div className="container-narrow">
         <div className="section-header">
-          <h2 className="section-title">Engineering Excellence Across All Technologies</h2>
+          <h2 className="section-title">Building Production Software End to End</h2>
           <p className="section-subtitle">
-            Full-stack expertise spanning modern web development, emerging technologies, and team leadership
+            Frontend, backend, databases, payments, and smart contracts — shipped to real users
           </p>
         </div>
 
@@ -23,9 +23,10 @@ const About: React.FC = () => {
                 scalable Node.js backends.
               </p>
               <p>
-                At Power Meta, I've architected secure smart contracts while building traditional web applications,
-                giving me unique insight into both cutting-edge blockchain technology and proven web development
-                patterns. This diverse experience allows me to choose the right technology for each challenge.
+                As the founding engineer at Power Meta, I shipped or contributed to five products: a GPU e-commerce platform with
+                Stripe and crypto checkout, a storage rental app with self-healing job monitoring, a generative AI
+                video web app with a GPU job queue, a creator dashboard and fan marketplace, and the smart contracts
+                behind them. I owned architecture, code review, and deployments across all of it.
               </p>
             </div>
 
@@ -64,9 +65,9 @@ const About: React.FC = () => {
             </div>
 
             <div className="expertise-card">
-              <div className="card-icon">👥</div>
-              <h4>Team Leadership</h4>
-              <p>Proven track record leading teams of 80+ people, achieving #1 NPS scores and driving operational excellence.</p>
+              <div className="card-icon">🤖</div>
+              <h4>AI-First Development</h4>
+              <p>Builds with Claude and Cursor day to day, and has shipped Stable Diffusion, ControlNet, and FFmpeg video pipelines to production.</p>
             </div>
           </div>
         </div>

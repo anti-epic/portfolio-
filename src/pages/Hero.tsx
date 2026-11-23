@@ -14,23 +14,23 @@ const Hero: React.FC = () => {
 
           <h1 className="hero-title">
             Chase Donahoe<br />
-            <span className="text-gradient">Full Stack Innovation Leader</span>
+            <span className="text-gradient">Full Stack Software Engineer</span>
           </h1>
 
           <p className="hero-subtitle">
-            Dynamic Full Stack Software Engineer with expertise across modern web technologies,
-            from React and Node.js to emerging blockchain solutions. I architect scalable applications,
-            lead high-performing teams, and drive innovation that delivers real business value.
+            Full stack software engineer with 3+ years as a founding engineer, building production web apps end to end with React, Node.js, Express,
+            and PostgreSQL — REST APIs, Stripe payments, dashboards, job queues, and monitoring, plus
+            Solidity smart contracts. I work AI-first with Claude and Cursor to ship like a much larger team.
           </p>
 
           <div className="hero-stats">
             <div className="stat">
-              <div className="stat-number">#1</div>
-              <div className="stat-label">NPS Score (FY21)</div>
+              <div className="stat-number">5</div>
+              <div className="stat-label">Products Shipped</div>
             </div>
             <div className="stat">
-              <div className="stat-number">80</div>
-              <div className="stat-label">Team Members Led</div>
+              <div className="stat-number">3+</div>
+              <div className="stat-label">Years Full Stack</div>
             </div>
             <div className="stat">
               <div className="stat-number">1000+</div>

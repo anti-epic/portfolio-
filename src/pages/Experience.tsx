@@ -15,39 +15,41 @@ const Experience: React.FC = () => {
     {
       company: "Power Meta",
       role: "Full Stack Founding Software Engineer",
-      period: "June 2023 - Oct 2025",
-      description: "Architected and developed blockchain-based solutions with a focus on security, gas efficiency, and user experience integration.",
+      period: "June 2023 - Oct 2026",
+      description: "Founding engineer at an early-stage startup for 3+ years, shipping or contributing to five products and building production web apps end to end — React frontends, Node.js/Express APIs, PostgreSQL, payments, job queues, monitoring, and Solidity smart contracts.",
       achievements: [
-        "Architected and deployed secure smart contracts for blockchain-based solutions, ensuring reliability and optimal gas efficiency",
-        "Developed full-stack web applications using React, Node.js, and Express, implementing responsive front-end interfaces and robust APIs",
-        "Integrated blockchain technology with traditional web applications, creating seamless decentralized user experiences",
-        "Collaborated with cross-functional teams to deliver innovative Web3 solutions"
+        "Shipped or contributed to five products, owning architecture decisions, code reviews, and deployments",
+        "Built a full-stack e-commerce platform for GPU sales and hosting with Stripe card payments and crypto checkout backed by Solidity escrow with timeout refunds",
+        "Built the customer-facing React/Node.js app for renting storage, plus a monitoring service that flagged stalled jobs and auto-retried failures with alternate providers",
+        "Built the web app for a sister company's generative AI video product, including file uploads, scene controls, and a GPU job queue around a Stable Diffusion pipeline",
+        "Built a self-serve creator dashboard and fan marketplace that turned each new celebrity launch from a manual engineering deployment into a few clicks",
+        "Wrote ERC-20 fan token and ERC-1155 event pass factory contracts, with minting, redemption, and wallets",
+        "Engineered Filecoin storage deal workflows end to end (CAR packaging, Piece CIDs, on-chain tracking through sealing) as a KYC-verified Filecoin Plus client",
+        "Wrote GPU-compute blockchain contracts for provider registration, jobs, and payments, plus cross-chain settlement design"
       ],
-      technologies: ["Solidity", "Ethereum", "Web3", "React", "Node.js", "Express", "JavaScript", "Smart Contracts"]
+      technologies: ["React", "Node.js", "Express", "PostgreSQL", "Stripe", "Job Queues", "Solidity", "Stable Diffusion", "Filecoin", "Docker"]
     },
     {
       company: "Best Buy",
-      role: "Store Manager (Promoted)",
-      period: "Jan 2021 - Aug 2022",
-      description: "Led high-performance retail operations while managing large teams and driving exceptional customer satisfaction metrics.",
+      role: "Store Manager (promoted from Assistant Manager)",
+      period: "Jan 2014 - Aug 2022",
+      description: "Led large retail teams before transitioning into software engineering.",
       achievements: [
-        "Achieved #1 Net Promoter Score (NPS) in the market for FY21, ranking top 100 company-wide among 1,000+ stores",
-        "Led and managed team of 80 employees, focusing on performance development and coaching",
-        "Implemented training programs leveraging e-learning platforms, improving retention and customer satisfaction",
-        "Drove operational excellence through data-driven decision making and process optimization",
-        "Managed multi-million dollar inventory and P&L responsibilities"
+        "Led 80+ employees and a multi-million dollar P&L; #1 in market for NPS (FY21), top 100 of 1,000+ stores",
+        "Designed and launched e-learning onboarding and training programs that shortened new-hire ramp time"
       ],
-      technologies: ["Team Leadership", "Data Analysis", "Process Optimization", "P&L Management", "Training Development"]
+      technologies: ["Leadership", "P&L Management", "Training Development"]
     }
   ];
 
   const technicalSkills = {
-    "Languages": ["JavaScript", "Python", "C++", "SQL", "Solidity", "HTML", "CSS"],
-    "Frontend": ["React", "Vue", "Redux", "Bootstrap", "Responsive Design"],
-    "Backend": ["Node.js", "Express", "Flask", "REST APIs", "Microservices Architecture"],
-    "Databases": ["PostgreSQL", "MongoDB", "MySQL", "NoSQL", "Sequelize", "SQLAlchemy"],
-    "Blockchain": ["Ethereum", "Web3", "Smart Contract Development", "Gas Optimization"],
-    "DevOps & Tools": ["Docker", "Git", "GitHub", "CI/CD", "Kanban", "Agile", "Scrum", "TDD"]
+    "Languages": ["JavaScript (ES6+)", "TypeScript", "Python", "SQL", "HTML/CSS", "Solidity", "C++"],
+    "Frontend": ["React", "Redux", "Next.js", "Vue", "Bootstrap", "Tailwind CSS"],
+    "Backend": ["Node.js", "Express", "Flask", "REST APIs", "Microservices", "JWT Auth", "Job Queues", "Stripe Payments"],
+    "Databases": ["PostgreSQL", "MongoDB", "MySQL", "Redis", "Sequelize", "SQLAlchemy", "Prisma"],
+    "Cloud & DevOps": ["AWS", "Heroku", "Docker", "Git/GitHub", "CI/CD", "Agile/Scrum", "TDD", "Code Review"],
+    "AI": ["Claude", "Cursor", "Stable Diffusion", "ControlNet", "FFmpeg video pipelines"],
+    "Web3": ["Ethereum", "Web3.js", "ERC-20", "ERC-1155", "Smart Contract Escrow", "Filecoin", "IPFS"]
   };
 
   return (
@@ -56,7 +58,7 @@ const Experience: React.FC = () => {
         <div className="section-header">
           <h2 className="section-title">Professional Experience</h2>
           <p className="section-subtitle">
-            From blockchain innovation to team leadership excellence
+            Founding engineer shipping production web apps end to end
           </p>
         </div>
 
@@ -114,7 +116,7 @@ const Experience: React.FC = () => {
           <div className="education-grid">
             <div className="education-card">
               <h4>Full Stack Software Development Bootcamp</h4>
-              <p className="education-institution">App Academy • March 2023</p>
+              <p className="education-institution">App Academy • Oct 2022 - Mar 2023</p>
               <p className="education-description">
                 Completed 1,000+ hour intensive program with &lt;3% acceptance rate.
                 Built full-stack applications including RESTful APIs, authentication systems, and real-time features.
